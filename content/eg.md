@@ -6,8 +6,8 @@ tags        = [ "tooling" ]
 +++
 
 If you are willing to make large scale refactoring in your
-Go programs, automating the refactoring tasks is more diserable than
-manual editing. `eg` is a program allows you to perform transformations
+Go programs, automating the refactoring tasks is more desirable than
+manual editing. `eg` is a program that allows you to perform transformations
 based on template Go files.
 
 To install the tool, run the following:
@@ -17,7 +17,7 @@ $ go get golang.org/x/tools/cmd/eg
 ```
 
 `eg` requires a template file to look for which transformation it should
-apply to your source code. What's nice is that template file is a Go file
+apply to your source code. What's nice is that the template file is a Go file
 with little annotations.
 
 Consider the following Go program:
@@ -34,7 +34,8 @@ func ExtendWith50000ns(t time.Time) time.Time {
 }
 ```
 Assume you want to eliminate the unnecessary time.Duration casting at ExtendWith50000ns.
-And as a good practice, you would also add a unit to the duration rather than just passing 50000.
+And as a good practice, you would also like to add a unit to the duration rather than
+just passing 50000.
 
 `eg` requires a template file where you define before and afters that represents the
 transformation.
